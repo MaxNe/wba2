@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<Registrierung>
+<Gruppenleiter>
+	<Vorname>Alex</Vorname>
+	<Nachname>Heman</Nachname>
+	<Email>heman@grayskull.com</Email>
+	<Geburtsdatum>01.02.2003</Geburtsdatum>
+	<Erfahrung>option= Profi</Erfahrung>
+	<Schlagzeug>option= vorhanden</Schlagzeug>
+	<Anmerkung>Bei der Macht von Grayskull</Anmerkung>
+</Gruppenleiter>
+
+<AddPerson>
+	<Vorname>Carl</Vorname>
+	<Nachname>Heinz</Nachname>
+	<Email>heinz.carl@entenhausen.com</Email>
+	<Geburtsdatum>01.02.2007</Geburtsdatum>
+	<Erfahrung>option= Amateur</Erfahrung>
+	<Schlagzeug>option= nicht vorhanden</Schlagzeug>
+</AddPerson>
+
+<AddPerson>
+	<Vorname>Timo</Vorname>
+	<Nachname>John</Nachname>
+	<Email>John.cool@ultracool.com</Email>
+	<Geburtsdatum>01.02.2010</Geburtsdatum>
+	<Erfahrung>option= Fortgeschritten</Erfahrung>
+	<Schlagzeug>option= vorhanden</Schlagzeug>
+</AddPerson>
+
+</Registrierung>
