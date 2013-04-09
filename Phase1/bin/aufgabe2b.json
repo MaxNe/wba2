@@ -1,0 +1,31 @@
+{
+  "Registrierung": {
+    "Gruppenleiter": {
+      "Vorname": "Alex",
+      "Nachname": "Heman",
+      "Email": "heman@grayskull.com",
+      "Geburtsdatum": "01.02.2003",
+      "Erfahrung": "option= Profi",
+      "Schlagzeug": "option= vorhanden",
+      "Anmerkung": "Bei der Macht von Grayskull"
+    },
+    "AddPerson": [
+      {
+        "Vorname": "Carl",
+        "Nachname": "Heinz",
+        "Email": "heinz.carl@entenhausen.com",
+        "Geburtsdatum": "01.02.2007",
+        "Erfahrung": "option= Amateur",
+        "Schlagzeug": "option= nicht vorhanden"
+      },
+      {
+        "Vorname": "Timo",
+        "Nachname": "John",
+        "Email": "John.cool@ultracool.com",
+        "Geburtsdatum": "01.02.2010",
+        "Erfahrung": "option= Fortgeschritten",
+        "Schlagzeug": "option= vorhanden"
+      }
+    ]
+  }
+}
