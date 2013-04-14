@@ -10,7 +10,7 @@ package generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
@@ -24,8 +24,10 @@ import javax.xml.bind.annotation.XmlType;
  * &lt;complexType>
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;attribute name="Anzahl" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="Einheit" type="{}Zeittyp" />
+ *       &lt;sequence>
+ *         &lt;element name="Autor" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="Nachricht" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -34,61 +36,64 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "")
-@XmlRootElement(name = "Zeit")
-public class Zeit {
+@XmlType(name = "", propOrder = {
+    "autor",
+    "nachricht"
+})
+@XmlRootElement(name = "Kommentar")
+public class Kommentar {
 
-    @XmlAttribute(name = "Anzahl")
-    protected String anzahl;
-    @XmlAttribute(name = "Einheit")
-    protected String einheit;
+    @XmlElement(name = "Autor", required = true)
+    protected String autor;
+    @XmlElement(name = "Nachricht", required = true)
+    protected String nachricht;
 
     /**
-     * Ruft den Wert der anzahl-Eigenschaft ab.
+     * Ruft den Wert der autor-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getAnzahl() {
-        return anzahl;
+    public String getAutor() {
+        return autor;
     }
 
     /**
-     * Legt den Wert der anzahl-Eigenschaft fest.
+     * Legt den Wert der autor-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setAnzahl(String value) {
-        this.anzahl = value;
+    public void setAutor(String value) {
+        this.autor = value;
     }
 
     /**
-     * Ruft den Wert der einheit-Eigenschaft ab.
+     * Ruft den Wert der nachricht-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getEinheit() {
-        return einheit;
+    public String getNachricht() {
+        return nachricht;
     }
 
     /**
-     * Legt den Wert der einheit-Eigenschaft fest.
+     * Legt den Wert der nachricht-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setEinheit(String value) {
-        this.einheit = value;
+    public void setNachricht(String value) {
+        this.nachricht = value;
     }
 
 }

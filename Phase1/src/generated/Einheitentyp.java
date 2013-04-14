@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.6 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2013.04.14 um 01:08:50 PM CEST 
+// Generiert: 2013.04.14 um 05:36:16 PM CEST 
 //
 
 
@@ -29,7 +29,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="Milliliter"/>
  *     &lt;enumeration value="Liter"/>
  *     &lt;enumeration value="Zeniliter"/>
- *     &lt;enumeration value="Packung(en)"/>
+ *     &lt;enumeration value="Packung"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -55,8 +55,8 @@ public enum Einheitentyp {
     LITER("Liter"),
     @XmlEnumValue("Zeniliter")
     ZENILITER("Zeniliter"),
-    @XmlEnumValue("Packung(en)")
-    PACKUNG_EN("Packung(en)");
+    @XmlEnumValue("Packung")
+    PACKUNG("Packung");
     private final String value;
 
     Einheitentyp(String v) {

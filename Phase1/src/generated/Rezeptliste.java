@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.6 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2013.04.14 um 01:08:50 PM CEST 
+// Generiert: 2013.04.14 um 05:36:16 PM CEST 
 //
 
 
@@ -27,7 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="Rezept" type="{http://www.w3.org/2001/XMLSchema}anyType" maxOccurs="unbounded"/>
+ *         &lt;element ref="{}Rezept" maxOccurs="unbounded"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -44,7 +44,7 @@ import javax.xml.bind.annotation.XmlType;
 public class Rezeptliste {
 
     @XmlElement(name = "Rezept", required = true)
-    protected List<Object> rezept;
+    protected List<Rezept> rezept;
 
     /**
      * Gets the value of the rezept property.
@@ -64,13 +64,13 @@ public class Rezeptliste {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link Object }
+     * {@link Rezept }
      * 
      * 
      */
-    public List<Object> getRezept() {
+    public List<Rezept> getRezept() {
         if (rezept == null) {
-            rezept = new ArrayList<Object>();
+            rezept = new ArrayList<Rezept>();
         }
         return this.rezept;
     }

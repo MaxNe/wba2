@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.6 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2013.04.14 um 01:08:50 PM CEST 
+// Generiert: 2013.04.14 um 05:36:16 PM CEST 
 //
 
 
@@ -30,10 +30,11 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Titel" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="Untertitel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="Zutat" type="{}Zutatentyp" maxOccurs="unbounded"/>
- *         &lt;element name="Zubereitung" type="{http://www.w3.org/2001/XMLSchema}anyType"/>
- *         &lt;element name="Zeit" type="{http://www.w3.org/2001/XMLSchema}anyType"/>
- *         &lt;element name="Schwierigkeit" type="{http://www.w3.org/2001/XMLSchema}anyType"/>
- *         &lt;element name="Brennwert" type="{http://www.w3.org/2001/XMLSchema}anyType" minOccurs="0"/>
+ *         &lt;element name="Zubereitung" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element ref="{}Zeit"/>
+ *         &lt;element ref="{}Schwierigkeit"/>
+ *         &lt;element ref="{}Brennwert" minOccurs="0"/>
+ *         &lt;element ref="{}Kommentar" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -50,7 +51,8 @@ import javax.xml.bind.annotation.XmlType;
     "zubereitung",
     "zeit",
     "schwierigkeit",
-    "brennwert"
+    "brennwert",
+    "kommentar"
 })
 @XmlRootElement(name = "Rezept")
 public class Rezept {
@@ -61,14 +63,16 @@ public class Rezept {
     protected String untertitel;
     @XmlElement(name = "Zutat", required = true)
     protected List<Zutatentyp> zutat;
-    @XmlElement(name = "Zubereitung", required = true)
-    protected Object zubereitung;
+    @XmlElement(name = "Zubereitung")
+    protected String zubereitung;
     @XmlElement(name = "Zeit", required = true)
-    protected Object zeit;
+    protected Zeit zeit;
     @XmlElement(name = "Schwierigkeit", required = true)
-    protected Object schwierigkeit;
+    protected Schwierigkeit schwierigkeit;
     @XmlElement(name = "Brennwert")
-    protected Object brennwert;
+    protected Brennwert brennwert;
+    @XmlElement(name = "Kommentar")
+    protected List<Kommentar> kommentar;
 
     /**
      * Ruft den Wert der titel-Eigenschaft ab.
@@ -152,10 +156,10 @@ public class Rezept {
      * 
      * @return
      *     possible object is
-     *     {@link Object }
+     *     {@link String }
      *     
      */
-    public Object getZubereitung() {
+    public String getZubereitung() {
         return zubereitung;
     }
 
@@ -164,10 +168,10 @@ public class Rezept {
      * 
      * @param value
      *     allowed object is
-     *     {@link Object }
+     *     {@link String }
      *     
      */
-    public void setZubereitung(Object value) {
+    public void setZubereitung(String value) {
         this.zubereitung = value;
     }
 
@@ -176,10 +180,10 @@ public class Rezept {
      * 
      * @return
      *     possible object is
-     *     {@link Object }
+     *     {@link Zeit }
      *     
      */
-    public Object getZeit() {
+    public Zeit getZeit() {
         return zeit;
     }
 
@@ -188,10 +192,10 @@ public class Rezept {
      * 
      * @param value
      *     allowed object is
-     *     {@link Object }
+     *     {@link Zeit }
      *     
      */
-    public void setZeit(Object value) {
+    public void setZeit(Zeit value) {
         this.zeit = value;
     }
 
@@ -200,10 +204,10 @@ public class Rezept {
      * 
      * @return
      *     possible object is
-     *     {@link Object }
+     *     {@link Schwierigkeit }
      *     
      */
-    public Object getSchwierigkeit() {
+    public Schwierigkeit getSchwierigkeit() {
         return schwierigkeit;
     }
 
@@ -212,10 +216,10 @@ public class Rezept {
      * 
      * @param value
      *     allowed object is
-     *     {@link Object }
+     *     {@link Schwierigkeit }
      *     
      */
-    public void setSchwierigkeit(Object value) {
+    public void setSchwierigkeit(Schwierigkeit value) {
         this.schwierigkeit = value;
     }
 
@@ -224,10 +228,10 @@ public class Rezept {
      * 
      * @return
      *     possible object is
-     *     {@link Object }
+     *     {@link Brennwert }
      *     
      */
-    public Object getBrennwert() {
+    public Brennwert getBrennwert() {
         return brennwert;
     }
 
@@ -236,11 +240,40 @@ public class Rezept {
      * 
      * @param value
      *     allowed object is
-     *     {@link Object }
+     *     {@link Brennwert }
      *     
      */
-    public void setBrennwert(Object value) {
+    public void setBrennwert(Brennwert value) {
         this.brennwert = value;
+    }
+
+    /**
+     * Gets the value of the kommentar property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the kommentar property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getKommentar().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Kommentar }
+     * 
+     * 
+     */
+    public List<Kommentar> getKommentar() {
+        if (kommentar == null) {
+            kommentar = new ArrayList<Kommentar>();
+        }
+        return this.kommentar;
     }
 
 }

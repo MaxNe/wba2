@@ -8,14 +8,14 @@ xsi:noNamespaceSchemaLocation="aufgabe3dXML-Schema.xsd">
 <Titel>
 Lenchen's Schokoladenkuchen
 </Titel>
-<Zutat name="Butter" Anzahl="200" Einheit="Gramm"/>
-<Zutat name="Zucker" Anzahl="200" Einheit="Gramm"/>
-<Zutat name="Schokolade, Blockschokolade" Anzahl="200" Einheit="Gramm"/>
+<Zutat Name="Butter" Anzahl="200" Einheit="Gramm"/>
+<Zutat Name="Zucker" Anzahl="200" Einheit="Gramm"/>
+<Zutat Name="Schokolade, Blockschokolade" Anzahl="200" Einheit="Gramm"/>
 <!-- ref="http://www.chefkoch.de/magazin/artikel/105,0/Chefkoch/Schokolade.html" -->
-<Zutat name="Mehl" Anzahl="120" Einheit="Gramm"/>
-<Zutat name="Backpulver" Anzahl="0.5" Einheit="Teeloeffel"/>
-<Zutat name="Vanillezucker" Anzahl="1" Einheit="Packung"/>
-<Zutat name="Ei(er)" Anzahl="4"/>
+<Zutat Name="Mehl" Anzahl="120" Einheit="Gramm"/>
+<Zutat Name="Backpulver" Anzahl="0.5" Einheit="Teeloeffel"/>
+<Zutat Name="Vanillezucker" Anzahl="1" Einheit="Packung"/>
+<Zutat Name="Ei(er)" Anzahl="4"/>
 <Zubereitung>
 <Schritt>
 Butter und Schokolade im Wasserbad schmelzen.
