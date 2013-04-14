@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<Rezeptliste
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="aufgabe3dXML-Schema.xsd">
+
+
+<Rezept>
+	<Titel>Schwarzwälder Kirschtorte</Titel>
+	<Zutat name="Kuvertüre" Anzahl="140" Einheit="Gramm"/>
+	<Zutat name="Butter" Anzahl="75" Einheit="Gramm"/>
+	<Zutat name="Ei(er)" Anzahl="6"/>
+	<Zutat name="Zucker" Anzahl="180" Einheit="Gramm"/>
+	<Zutat name="Mehl" Anzahl="100" Einheit="Gramm"/>
+	<Zutat name="Speisestärke" Anzahl="50" Einheit="Gramm"/>
+	<Zutat name="Backpulver" Anzahl="2" Einheit="Teeloeffel"/>
+	<Zutat name="Kirschen" Anzahl="800" Einheit="Gramm"/>
+	<Zutat name="Kirchwasser" Anzahl="100" Einheit="Milliliter"/>
+	<Zutat name="Sahne" Anzahl="800" Einheit="Milliliter"/>
+	<Zutat name="Vanillezucker" Anzahl="3" Einheit="Packungen"/>
+	
+	<Zubereitung>
+		<Schritt>Kuvertüre mit Butter im warmen Wasserbad schmelzen.</Schritt>
+		<Schritt>Die Eier trennen. Eiweiße zu steifem Schnee schlagen.</Schritt>
+		<Schritt>Eigelbe mit Zucker schaumig rühren. Kuvertüre unterrühren.</Schritt>
+		<Schritt>Mehl mit Stärke und Backpulver über den Eischnee sieben und locker unterziehen.</Schritt>
+		<Schritt>Biskuit in eine mit Backpapier ausgelegte Springform füllen. Im vorgeheizten Backofen bei 175°C 40-45 Min. backen. Biskuit auf einem Kuchengitter auskühlen lassen.</Schritt>
+		<Schritt>Nach dem Erkalten zweimal waagerecht durchteilen, dazu am Rand waagerecht mit einem Messer ein wenig einschneiden, ein Stück Küchengarn um den Boden legen und über Kreuz herausziehen.</Schritt>
+		<Schritt>Sauerkirschen durch ein Sieb gießen und vom Saft trennen, Speisestärke mit Zucker vermischen und mit etwas Saft glatt rühren.</Schritt>
+		<Schritt>Den restlichen Saft zum Kochen bringen, die Speisestärke hineingeben und aufkochen lassen, die Kirschen hineingeben und etwas abkühlen lassen, mit der Hälfte des Kirschwasser versetzen.</Schritt>
+		<Schritt>Zwei Böden mit Kirschwasser tränken und jeweils die Hälfte der Kirschmasse darauf verteilen, auskühlen und gelieren lassen.</Schritt>
+		<Schritt>Sahne mit Vanillezucker steif schlagen. Einen Boden auf eine Tortenplatte legen und mit einem Viertel der steifen Sahne abdecken.</Schritt>
+		<Schritt>Zweiten Tortenboden obenauf legen und mit dem zweiten Viertel der Schlagsahne bedecken und mit dem letzten Biskuitboden bedecken. Diesen auch mit Kirschwasser aromatisieren.</Schritt>
+		<Schritt>Die Torte rundherum mit Sahne bestreichen, einen Rest für die Verzierung in eine Spritztüte füllen. Den Rand und die Oberfläche mit Raspelschokolade oder zerstoßener Borkenschokolade bedecken, Oberfläche außen mit 16 Sahnerosetten und in der Mitte mit einer Sahnerosette verzieren, je eine kandierte Kirsche auflegen.</Schritt>
+	</Zubereitung>
+	<Zeit Anzahl="1" Einheit="Stunden"/>
+	<Schwierigkeit level="schwer"/>
+</Rezept>
+
+
+
+<Rezept>
+	<Titel>
+		Lenchen's Schokoladenkuchen
+	</Titel>
+	<Zutat name="Butter" Anzahl="200" Einheit="Gramm"/>
+	<Zutat name="Zucker" Anzahl="200" Einheit="Gramm"/>
+	<Zutat name="Schokolade, Blockschokolade" Anzahl="200" Einheit="Gramm"/>
+	<!-- ref="http://www.chefkoch.de/magazin/artikel/105,0/Chefkoch/Schokolade.html" -->
+	<Zutat name="Mehl" Anzahl="120" Einheit="Gramm"/>
+	<Zutat name="Backpulver" Anzahl="0.5" Einheit="Teeloeffel"/>
+	<Zutat name="Vanillezucker" Anzahl="1" Einheit="Packung"/>
+	<Zutat name="Ei(er)" Anzahl="4"/>
+	<Zubereitung>
+		<Schritt>
+		Butter und Schokolade im Wasserbad schmelzen.
+		</Schritt>
+		<Schritt>
+		Eier trennen.
+		</Schritt>
+		<Schritt>
+		Eiweiß steif schlagen.
+		</Schritt>
+		<Schritt>
+		Eigelbe, Zucker und Vanillezucker verrühren.
+		</Schritt>
+		<Schritt>
+		Geschmolzene Butter-Schokomasse hinzufügen und mischen.
+		</Schritt>
+		<Schritt>
+		Mehl mit dem Backpulver in die Masse sieben und zum Schluss die steifen Eiweiße vorsichtig unterheben.
+		</Schritt>
+		<Schritt>
+		In eine gut gefettete Form geben.
+		</Schritt>
+		<Schritt>
+		Bei 180°Grad 40 – 50 Minuten backen.
+		</Schritt>
+	</Zubereitung>
+	<Zeit Anzahl="1" Einheit="Stunden"/>
+	<Schwierigkeit level="normal"/>
+	<Brennwert Kalorien="295"/>
+</Rezept>
+</Rezeptliste>

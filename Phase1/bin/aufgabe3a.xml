@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Rezeptliste
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="aufgabe3dXML-Schema.xsd">
+
+
+<Rezept>
+<Titel>
+Lenchen's Schokoladenkuchen
+</Titel>
+<Zutat name="Butter" Anzahl="200" Einheit="Gramm"/>
+<Zutat name="Zucker" Anzahl="200" Einheit="Gramm"/>
+<Zutat name="Schokolade, Blockschokolade" Anzahl="200" Einheit="Gramm"/>
+<!-- ref="http://www.chefkoch.de/magazin/artikel/105,0/Chefkoch/Schokolade.html" -->
+<Zutat name="Mehl" Anzahl="120" Einheit="Gramm"/>
+<Zutat name="Backpulver" Anzahl="0.5" Einheit="Teeloeffel"/>
+<Zutat name="Vanillezucker" Anzahl="1" Einheit="Packung"/>
+<Zutat name="Ei(er)" Anzahl="4"/>
+<Zubereitung>
+<Schritt>
+Butter und Schokolade im Wasserbad schmelzen.
+</Schritt>
+<Schritt>
+Eier trennen.
+</Schritt>
+<Schritt>
+Eiweiß steif schlagen.
+</Schritt>
+<Schritt>
+Eigelbe, Zucker und Vanillezucker verrühren.
+</Schritt>
+<Schritt>
+Geschmolzene Butter-Schokomasse hinzufügen und mischen.
+</Schritt>
+<Schritt>
+Mehl mit dem Backpulver in die Masse sieben und zum Schluss die steifen Eiweiße vorsichtig unterheben.
+</Schritt>
+<Schritt>
+In eine gut gefettete Form geben.
+</Schritt>
+<Schritt>
+Bei 180°Grad 40 – 50 Minuten backen.
+</Schritt>
+</Zubereitung>
+<Zeit Anzahl="1" Einheit="Stunden"/>
+<Schwierigkeit level="normal"/>
+<Brennwert Kalorien="295"/>
+</Rezept>
+</Rezeptliste>

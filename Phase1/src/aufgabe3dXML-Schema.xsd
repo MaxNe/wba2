@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	
+	<xs:simpleType name="Einheitentyp">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Gramm" />
+			<xs:enumeration value="Kilogramm" />
+			<xs:enumeration value="Teeloeffel" />
+			<xs:enumeration value="Essloeffel" />
+			<xs:enumeration value="Tasse" />
+			<xs:enumeration value="Milliliter" />
+			<xs:enumeration value="Liter" />
+			<xs:enumeration value="Zeniliter" />
+			<xs:enumeration value="Packung(en)" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="Zutatentyp">
+		<xs:attribute name="Name" type="xs:string" />
+		<xs:attribute name="Anzahl" type="xs:string" />
+		<xs:attribute name="Einheit" type="Einheitentyp" />	
+	</xs:complexType>
+	
+	<xs:element name="Zubereitung">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Schritt" type="xs:string" minOccurs="1" maxOccurs="unbounded" /> 
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:simpleType name="Schwierigkeitsgrad">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="einfach|normal|schwer" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:element name="Schwierigkeit">
+ 		<xs:complexType>
+			<xs:attribute name="level" type="Schwierigkeitsgrad" /> 			
+		</xs:complexType> 
+	</xs:element>
+	
+	<xs:simpleType name="Zeittyp">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="Minuten|Stunden" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:element name="Zeit">
+		<xs:complexType>
+			<xs:attribute name="Anzahl" type="xs:string" />
+			<xs:attribute name="Einheit" type="Zeittyp" />
+		</xs:complexType> 
+	</xs:element>
+	
+	<xs:element name="Brennwert">
+		<xs:complexType>
+			<xs:attribute name="Kalorien" type="xs:nonNegativeInteger" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="Rezept">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Titel" type="xs:string" />
+				<xs:element name="Untertitel" type="xs:string" minOccurs="0" />
+				<xs:element name="Zutat" type="Zutatentyp" minOccurs="1" maxOccurs="unbounded" />
+				<xs:element name="Zubereitung" />
+				<xs:element name="Zeit" />
+				<xs:element name="Schwierigkeit" />
+				<xs:element name="Brennwert" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+	
+	<xs:element name="Rezeptliste">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Rezept" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>
+
